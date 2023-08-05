@@ -51,9 +51,9 @@
 ### Обработка post запроса 
 
 
-[app.post('*', (req, res) => {
+app.post('*', (req, res) => {
   console.log("Данные с формы")
   console.log(colors.bgWhite.italic(req.body.name))
   console.log(colors.bgWhite.italic(req.body.surname))
   res.end('Данные отправлены')
-})] # 
+}) 

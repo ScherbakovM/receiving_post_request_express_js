@@ -101,3 +101,33 @@ app.post('*', (req, res) => {
   res.end('Данные отправлены')
 })
 ```
+
+## Полный код
+
+### Модуль  colors  здесь выводит в консоль лог с background заданного цвета его использовать необязательно
+
+```
+import express from 'express'
+import colors from 'colors'
+import bodyParser from 'body-parser';
+
+const app = express()
+const PORT = 80
+
+
+app.use(bodyParser.urlencoded({ extended: true })) 
+
+app.get('/', (req, res) => {res.send('Это корневая директория')})
+
+app.post('*', (req, res) => {
+    console.log("Данные с формы")
+    console.log(colors.bgWhite.italic(req.body.name))
+    console.log(colors.bgWhite.italic(req.body.surname))
+    res.end('Данные отправлены')
+})
+
+app.listen(PORT, () => {
+    console.log(colors.bgGreen(`Server has been started on port ${PORT}`))
+})
+
+```

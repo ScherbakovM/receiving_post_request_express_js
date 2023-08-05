@@ -60,6 +60,11 @@ app.get('/', (req, res) => {
 
 ### Обработка post запроса 
 
+### Для того чтобы мы могли распарсить данные формы нам потребуется импортировать модуль bodyParser 
+
+``` import bodyParser from 'body-parser';
+    app.use(bodyParser.urlencoded({ extended: true })) 
+```
 
 ```
 app.post('*', (req, res) => {

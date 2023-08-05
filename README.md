@@ -21,9 +21,13 @@
 
 `import express, { response } from 'express'`  
 
-Запускаем сервер
+Указываем какой порт слушать нашему серверу
 
-``app.listen(PORT, () => {console.log(colors.bgGreen(`Server has been started on port ${PORT}`))})``  
+``app.listen(PORT, () => {console.log(`Server has been started on port ${PORT}`)})``
+
+### Запускаем наше приложение 
+
+`nodemon index` где index название файла
 
 Сервер работает и запущен на 80 порту 
 

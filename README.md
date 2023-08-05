@@ -14,12 +14,23 @@
 
 Импортируем express
 
+Создаём сервер app и определяем порт
 
 `const app = express()`  
 `const PORT = 80`  
 
 `import express, { response } from 'express'`  
+
+Запускаем сервер
+
 ``app.listen(PORT, () => {console.log(colors.bgGreen(`Server has been started on port ${PORT}`))})``  
 
+Сервер работает и запущен на 80 порту 
 
-<img width="1067" alt="image" src="https://github.com/ScherbakovM/receiving_post_request_express_js/assets/109952823/41ae0a8e-da45-47d1-b253-fa99d4f8785e">
+`localhost:80`  
+
+### далее необходимо добавить логику обработки запросов 
+
+
+<img width="874" alt="image" src="https://github.com/ScherbakovM/receiving_post_request_express_js/assets/109952823/2056a380-5635-46ab-8091-06f9b2623a2a">
+

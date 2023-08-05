@@ -62,8 +62,9 @@ app.get('/', (req, res) => {
 
 ### Для того чтобы мы могли распарсить данные формы нам потребуется импортировать модуль bodyParser 
 
-``` import bodyParser from 'body-parser';
-    app.use(bodyParser.urlencoded({ extended: true })) 
+```
+    import bodyParser from 'body-parser';
+
 ```
 
 ```

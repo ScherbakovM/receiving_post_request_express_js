@@ -2,38 +2,56 @@
 
 ### создаем  package.json
 
-`npm init -y`
+```
+npm init -y
+```
 
 ### Добаваляем библеотеку express js
 
-`npm install express`
+```
+npm install express
+```
 
 ### Добавляем nodemon - используется для автоматического перезапуска сервера после внесения  изменений
 
-`npm install nodemon -g`
+```
+npm install nodemon -g
+```
 
 ### Импортируем express
 
-`import express from 'express'`
+```
+import express from 'express'
+```
 
 ### Создаём сервер app и определяем порт
 
-`const app = express()`  
-`const PORT = 80`  
+```
+const app = express()  
+const PORT = 80
+```  
 
   
 
 ### Указываем какой порт слушать нашему серверу
 
-``app.listen(PORT, () => {console.log(`Server has been started on port ${PORT}`)})``
+```
+app.listen(PORT, () => {
+  console.log(`Server has been started on port ${PORT}`)
+})
+```
 
 ### Запускаем наше приложение 
 
-`nodemon index` где index название файла
+```
+nodemon index
+``` где index название файла
 
 ### Сервер запущен на 80 порту 
 
-`localhost:80`  
+```
+localhost:80
+``` 
 
 
 <img width="428" alt="image" src="https://github.com/ScherbakovM/receiving_post_request_express_js/assets/109952823/1b2684bd-7c3e-4a4c-b988-b8a0738af80e">

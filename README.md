@@ -39,10 +39,21 @@
 
 ### Далее необходимо добавить логику обработки запросов 
 
-Обработка get запроса 
+### Обработка get запроса 
 
 `app.get('/', (req, res) => {res.send('Это корневая директория')})`
 
 В данном примере при переходе(запросе) на корневую дирректорию нашего сайта / в ответ мы отправляем пользователю функцией send() текст
 
 <img width="336" alt="image" src="https://github.com/ScherbakovM/receiving_post_request_express_js/assets/109952823/64f3ae2b-afe3-45b2-b9b5-651096664bd5">
+
+
+### Обработка post запроса 
+
+
+`app.post('*', (req, res) => {`  
+  `console.log("Данные с формы")`  
+  `console.log(colors.bgWhite.italic(req.body.name))`  
+  `console.log(colors.bgWhite.italic(req.body.surname))`  
+  `res.end('Данные отправлены')`  
+`})`  

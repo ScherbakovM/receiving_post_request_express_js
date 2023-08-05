@@ -36,8 +36,6 @@
 
 <img width="428" alt="image" src="https://github.com/ScherbakovM/receiving_post_request_express_js/assets/109952823/1b2684bd-7c3e-4a4c-b988-b8a0738af80e">
 
-<img width="645" alt="image" src="https://github.com/ScherbakovM/receiving_post_request_express_js/assets/109952823/a52bc8bf-89de-4259-817c-90e51acda20e">
-
 
 ### Далее необходимо добавить логику обработки запросов 
 

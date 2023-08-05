@@ -1,10 +1,10 @@
 #### Получение  пост запросов через express js
 
-создаем  package.json
+## создаем  package.json
 
 `npm init -y`
 
-Добаваляем библеотеку express js
+## Добаваляем библеотеку express js
 
 `npm install express`
 
@@ -12,16 +12,18 @@
 
 `npm install nodemon -g`
 
-Импортируем express
+## Импортируем express
 
-Создаём сервер app и определяем порт
+`import express from 'express'`
+
+## Создаём сервер app и определяем порт
 
 `const app = express()`  
 `const PORT = 80`  
 
-`import express, { response } from 'express'`  
+  
 
-Указываем какой порт слушать нашему серверу
+## Указываем какой порт слушать нашему серверу
 
 ``app.listen(PORT, () => {console.log(`Server has been started on port ${PORT}`)})``
 

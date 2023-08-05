@@ -14,6 +14,10 @@
 
 Импортируем express
 
+
+`const app = express()`  
+`const PORT = 80`  
+
 `import express, { response } from 'express'`  
 ``app.listen(PORT, () => {console.log(colors.bgGreen(`Server has been started on port ${PORT}`))})``  
 
